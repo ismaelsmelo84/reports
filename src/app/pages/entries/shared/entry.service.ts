@@ -27,6 +27,7 @@ export class EntryService extends BaseResourceService<Entry> {
     return this.setCategoryAndSendToServer(entry, super.update.bind(this));
   }
 
+  // O ideal é fazer isso no backend
   getByMonthAndYear(month: number, year: number): Observable<Entry[]> {
     return this.getAll().pipe(
       map(entries => this.filterByMonthAndYear(entries, month, year))

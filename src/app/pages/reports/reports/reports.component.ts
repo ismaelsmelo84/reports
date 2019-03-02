@@ -56,7 +56,7 @@ export class ReportsComponent implements OnInit {
     }
   }
 
-
+  // Este método poderia ficar no backend (assim como seus filhos)
   private setValues(entries: Entry[]) {
     this.entries = entries;
     this.calculateBalance();
